@@ -1,1 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main()
+        {
+            Console.Write("Ingrese angulo (en grados) c:");
+            double a = double.Parse(Console.ReadLine());
+            Console.Write("Ingrese cateto z:");
+            double t = double.Parse(Console.ReadLine());
+            double b = 90;
+
+            double a = 180 - c - b;
+
+            double aRadianes = a * (Math.PI / 180);
+            double bRadianes = b * (Math.PI / 180);
+            double cRadianes = c * (Math.PI / 180);
+
+            double y = (Math.Sin(aRadianes) * z) / Math.Sin(cRadianes);
+            double t = 
+
+            Console.WriteLine("a = " + a);
+            Console.WriteLine("b = " + b);
+            Console.WriteLine("c = " + c);
+            Console.WriteLine("t = " + t);
+            Console.WriteLine("y = " + y);
+            Console.WriteLine("z = " + z);
+        }
+    }
+}
