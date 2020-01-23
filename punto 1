@@ -16,22 +16,14 @@ namespace ConsoleApp1
             double z = double.Parse(Console.ReadLine());
             double b = 90;
             
-            //double aRadianes = a * (Math.PI / 180);
-            double bRadianes = b * (Math.PI / 180);
-            double cRadianes = c * (Math.PI / 180);//
-            
-            double c = cRadianes * (180 / Math.PI);
-            
-            double t = Math.Sqrt((((Math.Pow(z , 2)) + (Math.Pow(y , 2))) , 2);
-            
+            double sumaCuadrados = (Math.Pow(z, 2) + Math.Pow(y, 2));
+            double t = Math.Sqrt(sumaCuadrados);
+
             double cRadianes = Math.Asin((z / t));
             
+            double c = cRadianes * (180 / Math.PI);
+
             double a = 180 - c - b;
-
-
-
-            //double y = (Math.Sin(aRadianes) * t) / Math.Sin(bRadianes);
-            double z = (Math.Sin(cRadianes) * t) / Math.Sin(bRadianes);//
 
             Console.WriteLine("a = " + a);
             Console.WriteLine("b = " + b);
